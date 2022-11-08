@@ -1,0 +1,42 @@
+.btn {
+    background-color: $bg-color-btn;
+    color: $color-btn;
+    width: 180px;
+    border-radius: 4px;
+    padding: 13px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #FF9900;
+    display: inline-block;
+    font-family: $ff-btn;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+        @include btn-hover;
+    }
+
+    &.btn-small {
+        @include btn-small;
+    }
+
+    &.btn-transparent {
+        @include btn-small;
+        background-color:#FFFFFF;
+        color: #2F281E;
+        border-color: #BCD0E5;
+
+        &:hover {
+            background-color: $bg-color-btn;
+            border: 1px solid #BCD0E5;
+            color: $color-btn;
+        }
+    }
+
+    .btn-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 -16px;
+    }
+} 

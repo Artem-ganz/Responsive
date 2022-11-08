@@ -1,0 +1,51 @@
+.design-section {
+    margin-bottom: 100px;
+
+    .container {
+        max-width: $container-width;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+
+        @include media (">=768px") {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+    }
+
+    .img-holder {
+        max-width: 100%;
+
+        @include media (">=768px") {
+            max-width: 562px;
+        }
+    }
+
+    .text-col {
+        padding-top: 20px;
+
+        @include media (">=768px") {
+            max-width: 525px;
+            width: 100%;
+            padding-right: 110px;
+        }
+
+        h2 {
+            @extend %h2;
+            margin-bottom: 20px;
+        }
+    }
+
+    .text-holder {
+        strong {
+            margin-bottom: 10px;
+            display: block;
+        }
+        p {
+            margin:0 0 30px;
+        }
+    }
+
+}

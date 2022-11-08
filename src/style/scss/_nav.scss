@@ -1,0 +1,30 @@
+.nav {
+    text-align: center;
+
+    .nav-list {
+        list-style: none;
+        padding: 9px 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        padding: 0 10px;
+        &.actice {
+            color: $bg-color-btn;
+        }
+    }
+
+    .nav-link {
+        font-weight: 400;
+        font-size: $fs;
+        line-height: 28px;
+        color: $color-nav;
+        text-decoration: none;
+        
+        &:hover {
+            color:$bg-color-btn;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.marketers-section {
+    margin-bottom: 100px;
+    .container {
+        max-width: $container-width;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+
+        @include media (">=768px") {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+    }
+
+    .img-holder {
+        max-width: 100%;
+    }
+
+    .text-col {
+        padding-top: 40px;
+    
+        @include media (">=768px") {
+            max-width: 490px;
+        }
+
+        h2 {
+            @extend %h2;
+            margin-bottom: 20px;
+        }
+        .text-caption {
+            margin: 0 0 40px;
+        }
+    }
+
+    .text-holder {
+        strong {
+            margin-bottom: 10px;
+            display: block;
+        }
+        p {
+            margin:0 0 30px;
+        }
+    }
+}
